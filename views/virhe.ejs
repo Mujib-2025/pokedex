@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="fi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pokedex - virhe</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Pokedex</h1>
-    </header>
-    <main>
-      <h2>Virhe</h2>
-      <p><%= viesti %></p>
-      <a href="/" class="nappi">Takaisin etusivulle</a>
-    </main>
-  </body>
-</html>
+<%- include('osapohjat/header', { otsikko: 'Virhe' }); %>
+
+<h2>Virhe</h2>
+<p><%= viesti %></p>
+<a href="/" class="nappi">Takaisin etusivulle</a>
+
+<%- include('osapohjat/footer'); %>
