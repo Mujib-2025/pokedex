@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pokedex - sukupolvi <%= numero %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pokedex</h1>
+  </header>
+  <main>
+    <h2>Sukupolvi <%= numero %></h2>
+    <div class="pokemon-lista">
+      <% pokemonit.forEach(function(pokemon) { %>
+        <a href="/pokemon/<%= pokemon.name %>" class="nappi"><%= pokemon.name %></a>
+      <% }); %>
+    </div>
+  </main>
+</body>
+</html>

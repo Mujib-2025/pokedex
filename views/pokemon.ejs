@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex - <%= pokemon.name %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pokedex</h1>
+  </header>
+  <main>
+    <div class="pokemon-kortti">
+      <h2><%= pokemon.name %></h2>
+      <img src="<%= pokemon.sprites.front_default %>" alt="<%= pokemon.name %>">
+      <div class="tiedot">
+        <h3>Tyypit</h3>
+        <ul>
+          <% pokemon.types.forEach(function(tyyppi) { %>
+            <li><%= tyyppi.type.name %></li>
+          <% }); %>
+        </ul>
+        <h3>Tilastot</h3>
+        <ul>
+          <% pokemon.stats.forEach(function(tilasto) { %>
+            <li><%= tilasto.stat.name %>: <%= tilasto.base_stat %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: blue;
+  margin: 20px;
+}
+
+header {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-style: italic;
+}
+
+.nappi {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #e0e0e0;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nappi:hover {
+  background-color: #c0c0c0;
+}
+
+.sukupolvet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pokemon-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.pokemon-kortti {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pokemon-kortti img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.tiedot {
+  margin-top: 20px;
+}
+
+.tiedot ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
