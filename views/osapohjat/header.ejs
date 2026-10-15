@@ -9,7 +9,29 @@
   <body>
     <header>
       <h1>Pokedex</h1>
+      <form class="hakulomake" onsubmit="etsiPokemon(event)">
+        <input
+          type="text"
+          id="hakukentta"
+          placeholder="Eti pokemonia..."
+          required
+        />
+        <button type="submit">Etsi</button>
+      </form>
     </header>
-    <main></main>
+    <main>
+      <script>
+        function etsiPokemon(event) {
+          event.preventDefault();
+          const nimi = document
+            .getElementById("hakukentta")
+            .value.trim()
+            .toLowerCase();
+          if (nimi.length > 0) {
+            window.location.href = "/pokemon/" + nimi;
+          }
+        }
+      </script>
+    </main>
   </body>
 </html>

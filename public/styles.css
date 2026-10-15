@@ -6,10 +6,37 @@ body {
 
 header {
   background-color: #d3d3d3;
-  text-align: center;
-  padding: 10px;
+  padding: 10px 20px;
   border: 2px solid #000;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hakulomake {
+  display: flex;
+  gap: 10px;
+}
+
+.hakulomake input {
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.hakulomake button {
+  padding: 5px 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hakulomake button:hover {
+  background-color: #c0c0c0;
 }
 
 header h1 {
